@@ -4,23 +4,84 @@ import java.util.Scanner;
 class ConditionalConstruction {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
-            int month = sc.nextInt();
-
-            if (month < 1 || month > 12) {
-                System.out.println("error");
-            } else if (month == 12 || month == 1 || month == 2) {
-                System.out.println("Зима");
-            } else if (month == 3 || month == 4 || month == 5) {
-                System.out.println("Весна");
-            } else if (month == 6 || month == 7 || month == 8) {
-                System.out.println("Лето");
-            } else {
-                System.out.println("Осень");
-            }
 
         }
     }
 }
+
+//На вход подаётся слово. Выведите словами количество букв в этом слове. Если букв больше пяти - выведите "Длинное слово".
+//class ConditionalConstruction {
+//    public static void main(String[] args) {
+//        try (Scanner sc = new Scanner(System.in)) {
+//            String word = sc.next().toLowerCase();
+//
+//            if (word.length() == 1) {
+//                System.out.println("Одна буква");
+//            } else if (word.length() == 2) {
+//                System.out.println("Две буквы");
+//            } else if (word.length() == 3) {
+//                System.out.println("Три буквы");
+//            } else if (word.length() == 4) {
+//                System.out.println("Четыре буквы");
+//            } else if (word.length() == 5) {
+//                System.out.println("Пять букв");
+//            } else {
+//                System.out.println("Длинное слово");
+//            }
+//        }
+//    }
+//}
+
+
+//Богатейшие люди Земли решили создать тайное мировое правительство  ̶и̶ ̶у̶п̶р̶а̶в̶л̶я̶т̶ь̶ ̶п̶л̶а̶н̶е̶т̶о̶й̶,̶ ̶н̶е̶ ̶п̶р̶и̶в̶л̶е̶к̶а̶я̶ ̶в̶н̶и̶м̶а̶н̶и̶я̶ ̶с̶а̶н̶и̶т̶а̶р̶о̶в̶.
+// В кабинет совещаний могут войти только те, кто указан в специальном списке: Джефф Безос, Илон Маск,  Марк Цукерберг, Билл Гейтс.
+// Чтобы получить допуск, нужно сказать фразу-приветствие. Если фраза-приветствие содержит имя из списка, проход разрешается. Если же нет - проход блокируется.
+//На ввод подаётся фраза-приветствие. Выведите "Добро пожаловать!", если имя есть в списке, и "Здесь никого нет, Вы ошиблись дверью" - если нет.
+//class ConditionalConstruction {
+//    public static void main(String[] args) {
+//        try (Scanner sc = new Scanner(System.in)) {
+//            String n1 = "Джефф Безос";
+//            String n2 = "Илон Маск";
+//            String n3 = "Марк Цукерберг";
+//            String n4 = "Билл Гейтс";
+//            String wel = sc.nextLine();
+//
+//            if (wel.contains(n1) || wel.contains(n2) || wel.contains(n3) || wel.contains(n4)) {
+//                System.out.println("Добро пожаловать!");
+//            } else {
+//                System.out.println("Здесь никого нет, Вы ошиблись дверью");
+//            }
+//        }
+//    }
+//}
+
+//На вход подаются координаты точки x, y. Определите, попадает ли точка в заштрихованную область.
+//Выведите "Yes", если попадает, и "No" - в противном случае.
+//class ConditionalConstruction {
+//    public static void main(String[] args) {
+//        try (Scanner sc = new Scanner(System.in)) {
+//            double x = sc.nextDouble();
+//            double y = sc.nextDouble();
+//
+//            // Точка должна быть ниже параболы
+//            boolean underParabola = y <= 2 - x * x;
+//
+//            // Нижняя граница зависит от знака x
+//            boolean aboveLowerBound;
+//            if (x < 0) {
+//                aboveLowerBound = y >= x;      // Слева граница: прямая y = x
+//            } else {
+//                aboveLowerBound = y >= 0;      // Справа граница: ось X (y = 0)
+//            }
+//
+//            if (underParabola && aboveLowerBound) {
+//                System.out.println("Yes");
+//            } else {
+//                System.out.println("No");
+//            }
+//        }
+//    }
+//}
 
 //Выведите время года по введённому номеру месяца. Если введён ошибочный номер месяца, выведите "error".
 //import java.util.Scanner;  // Решение рааботает только с 14 java
