@@ -1,37 +1,28 @@
 package tests_by_topic;
 import java.util.Scanner;
 
+//На вход подаётся слово. Выведите словами количество букв в этом слове. Если букв больше пяти - выведите "Длинное слово".
 class ConditionalConstruction {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
+            String word = sc.next().toLowerCase();
 
+            if (word.length() == 1) {
+                System.out.println("Одна буква");
+            } else if (word.length() == 2) {
+                System.out.println("Две буквы");
+            } else if (word.length() == 3) {
+                System.out.println("Три буквы");
+            } else if (word.length() == 4) {
+                System.out.println("Четыре буквы");
+            } else if (word.length() == 5) {
+                System.out.println("Пять букв");
+            } else {
+                System.out.println("Длинное слово");
+            }
         }
     }
 }
-
-//На вход подаётся слово. Выведите словами количество букв в этом слове. Если букв больше пяти - выведите "Длинное слово".
-//class ConditionalConstruction {
-//    public static void main(String[] args) {
-//        try (Scanner sc = new Scanner(System.in)) {
-//            String word = sc.next().toLowerCase();
-//
-//            if (word.length() == 1) {
-//                System.out.println("Одна буква");
-//            } else if (word.length() == 2) {
-//                System.out.println("Две буквы");
-//            } else if (word.length() == 3) {
-//                System.out.println("Три буквы");
-//            } else if (word.length() == 4) {
-//                System.out.println("Четыре буквы");
-//            } else if (word.length() == 5) {
-//                System.out.println("Пять букв");
-//            } else {
-//                System.out.println("Длинное слово");
-//            }
-//        }
-//    }
-//}
-
 
 //Богатейшие люди Земли решили создать тайное мировое правительство  ̶и̶ ̶у̶п̶р̶а̶в̶л̶я̶т̶ь̶ ̶п̶л̶а̶н̶е̶т̶о̶й̶,̶ ̶н̶е̶ ̶п̶р̶и̶в̶л̶е̶к̶а̶я̶ ̶в̶н̶и̶м̶а̶н̶и̶я̶ ̶с̶а̶н̶и̶т̶а̶р̶о̶в̶.
 // В кабинет совещаний могут войти только те, кто указан в специальном списке: Джефф Безос, Илон Маск,  Марк Цукерберг, Билл Гейтс.
